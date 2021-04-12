@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundcolour">
+
+    <ImageButton
+        android:id="@+id/backbutton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Lernen"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/infobutton_4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/backgroundcolour"
+        android:onClick="zeigInfo4"
+        android:tint="@color/white"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <Button
+        android:id="@+id/openKarteikarten"
+        android:layout_width="265dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="375dp"
+        android:backgroundTint="@color/white"
+        android:text="Karteikarten"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/openVokabelliste"
+        android:layout_width="265dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="275dp"
+        android:backgroundTint="@color/white"
+        android:text="Vokabellisten"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+</RelativeLayout>

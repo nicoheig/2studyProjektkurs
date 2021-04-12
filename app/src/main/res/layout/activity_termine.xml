@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolour"
+    tools:context=".Termine_Activity">
+
+    <ImageButton
+        android:id="@+id/backbutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/termine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Termine"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/infobutton_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/backgroundcolour"
+        android:onClick="zeigInfo2"
+        android:tint="@color/white"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <Button
+        android:id="@+id/wechselZumVorherigenMonat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="340dp"
+        android:layout_marginBottom="643dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="&#x0003C;"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/zeigeAktMonatUndJahr"
+        android:layout_width="380dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:text="September 2021"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/wechselZumNächstenMonat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="340dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="643dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="&#x0003E;"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/compactcalendar"
+        android:layout_width="380dp"
+        android:layout_height="245dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="130dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:compactCalendarBackgroundColor="@color/white"
+        app:compactCalendarCurrentDayBackgroundColor="#9E9E9E"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#E0E0E0"
+        app:compactCalendarMultiEventIndicatorColor="#fff"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextColor="@color/black"
+        app:compactCalendarTextSize="18sp" />
+
+    <Button
+        android:id="@+id/addEventButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="@color/white"
+        android:onClick="zeigAddEventPopup"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="38dp" />
+
+    <ListView
+        android:id="@+id/lvEvents"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="43dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="340dp"
+        android:background="@color/white"
+        android:text="Anstehende Termine"
+        android:textColor="@color/black"
+        android:textSize="23dp" />
+
+</RelativeLayout>

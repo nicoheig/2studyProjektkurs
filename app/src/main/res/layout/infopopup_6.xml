@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:background="@color/backgroundcolour"
+    android:layout_gravity="center">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="18dp"
+        android:text="Unter Erstellen kannst du eine neue Karteikarte erstellen. Jede Karteikarte hat eine Überschrift und ein großes Textfeld.\n\nUnter Öffnen kannst du deine bisher erstellten Karteikarten aufrufen und mit ihnen lernen."
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/allesklarbutton6"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/white"
+        android:text="Alles klar!"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+</RelativeLayout>
